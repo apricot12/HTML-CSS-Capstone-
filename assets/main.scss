@@ -125,12 +125,13 @@ $site-theme: #D35649;
         align-items: center;
         color: white;
         text-align: center;
-        padding: 1.5rem;
+        padding: 1rem;
     
         img {
             width: 8rem;
             height: 8rem;
             border-radius: 50%;
+            margin-bottom: 1rem;
         }
 
         h4 {
@@ -156,4 +157,90 @@ $site-theme: #D35649;
     .banner:nth-child(3) {
         background-color: #99a4a6;
     }
-}
+  }
+
+  footer {
+      background-color: black;
+
+      a {
+          color: white;
+          padding: 1rem 1rem;
+      }
+  }
+
+  .top-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      border: 1px #181818;
+      border-style: solid none;
+      font-size: 0.8rem;
+      font-weight: 300;
+
+      .logo {
+          margin-top: 2.5rem;
+          margin-bottom: 2.5rem;
+          .top-footer-logo {
+              border-radius: 50%;
+              background-color: black;
+              font-size: 2rem;
+              border: 1px solid #181818;
+              padding: 2.5rem;
+          }
+      }
+  }
+
+  .middle-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 300;
+      margin: 1rem auto;
+      width: 70%;
+
+      a {
+          color: $site-theme;
+      }
+      
+      h3 {
+          color: white;
+          font-weight: bold;
+      }
+
+      p {
+          color: white;
+          font-size: 0.7rem;
+          padding: 0.3rem;
+      }
+
+      .input-form {
+          padding: 1rem 0 1.7rem;
+
+          button {
+              border-style: none;
+              color: white;
+              background-color: #181818;
+              padding: 0.13rem 0.13rem 0.2rem 0.2rem;
+
+          }
+      }
+  }
+
+  .bottom-footer {
+      display: flex;
+      background-color: #1f1f1f;
+      color: #99a4a6;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.7rem;
+      height: 2rem;
+
+      p {
+          margin-bottom: 0px;
+      }
+  }
+
+
