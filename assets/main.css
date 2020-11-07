@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #D35649;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav-links span {
+  display: none;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/assets/imgs/real-estate.jpg");
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+}
+
+.search h3 {
+  color: white;
+  font-weight: bolder;
+}
+
+.search .search-box {
+  margin: 1rem auto;
+  background-color: rgba(190, 189, 189, 0.8);
+  padding: 2rem;
+  border-radius: 4%;
+  width: 90%;
+  font-size: 1rem;
+}
+
+.search .search-box .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.search .search-box .search-form .search-text {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.search .search-box .search-form .search-btn {
+  color: white;
+  background-color: #D35649;
+  padding: 5px;
+  border: none;
+}
+
+.search .how-it-works .how-btn {
+  background-color: rgba(190, 189, 189, 0.8);
+  border: none;
+  padding: 0.5rem;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+.steps .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  text-align: center;
+}
+
+.steps .wrapper h3 {
+  color: #D35649;
+}
+
+.steps .wrapper .icon {
+  font-size: 2.5rem;
+}
+
+.steps .wrapper article {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
