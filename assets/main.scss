@@ -115,3 +115,45 @@ $site-theme: #D35649;
           }
       }
   }
+
+
+  .banners {
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+    
+        img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    .banner:nth-child(1) {
+        background-color: $site-theme;
+    }
+
+    .banner:nth-child(1) button {
+        color: #d35649;
+        border: none;
+        padding: 0.5rem;
+    }
+
+    .banner:nth-child(2) {
+        background-color: #519bd7;
+    }
+
+    .banner:nth-child(3) {
+        background-color: #99a4a6;
+    }
+}
