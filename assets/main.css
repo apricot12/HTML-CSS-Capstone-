@@ -390,7 +390,6 @@ footer a {
 }
 
 .advanced-filter .filter-items input {
-  display: block;
   border: none;
   width: 100%;
   margin-bottom: 1rem;
@@ -419,6 +418,27 @@ footer a {
 
 .advanced-filter .filter-items .filter-buttons .filter-button-2 {
   background-color: #e5ab5b;
+}
+
+@media (min-width: 768px) {
+  .advanced-filter .filter-items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .advanced-filter .filter-items input {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    width: 120%;
+  }
+  .advanced-filter .filter-items select {
+    width: 120%;
+  }
 }
 
 .results h2 {

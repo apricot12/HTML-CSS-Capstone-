@@ -308,7 +308,6 @@ $site-theme: #D35649;
         }
 
         input {
-            display: block;
             border: none;
             width: 100%;
             margin-bottom: 1rem;
@@ -338,6 +337,22 @@ $site-theme: #D35649;
 
             .filter-button-2 {
                 background-color: #e5ab5b;
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            input {
+                border: none;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+                width: 120%;
+            }
+
+            select {
+                width: 120%;
             }
         }
     }
