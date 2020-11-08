@@ -408,7 +408,7 @@ $site-theme: #D35649;
   }
 
   .main-details {
-      padding: 0 2rem 3rem;   
+      padding: 0 2rem 3rem;    
 
       .more-details {
         margin: 1.6rem 0;
@@ -446,6 +446,10 @@ $site-theme: #D35649;
             padding: 0.5rem 0;
             border: 1px solid #bebdbd;
             border-radius: 0.3rem;
+          }
+
+          @media (min-width: 1024px) {
+              grid-template-columns: repeat(2, 1fr);
           }
       }
 

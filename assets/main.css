@@ -543,6 +543,13 @@ footer a {
   border-radius: 0.3rem;
 }
 
+@media (min-width: 1024px) {
+  .details .detail-items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .details h1 {
   color: #D35649;
   font-size: 1.5rem;
