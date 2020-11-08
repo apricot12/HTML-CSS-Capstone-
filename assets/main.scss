@@ -336,11 +336,20 @@ $site-theme: #D35649;
 
   .main-details {
       padding: 0 2rem 3rem;   
+
+      .more-details {
+        margin: 1.6rem 0;
+        display: block;
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        color: #4c4851;
+        background-color: #f5f5f5;
+        letter-spacing: 0.5rem;
+      }
   }
 
   .details {
-      margin-top: 7rem;
-      font-weight: 600;
+      margin-top: 3rem;
       padding: 0.5rem;
       box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
 
@@ -348,7 +357,49 @@ $site-theme: #D35649;
         margin: 1rem 0;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0.7rem;
+
+        .detail-item {
+            padding: 1rem 0;
+            border: 1px solid #bebdbd;
+            border-radius: 0.3rem;
+          }
+      }
+
+      h1 {
+          color: $site-theme;
+          font-size: 1.5rem;
+      }
+
+      button {
+          color: white;
+          border: none;
+          padding: 0.5rem;
+          background: #519bd7;
+          float: right;
+      }
+
+      span {
+          color: #519bd7;
+      }
+
+      .contact {
+          display: flex;
+          flex-direction: column;
+      }
   }
 
+  .map {
+      h2 {
+          font-size: 2rem;
+          margin: 3rem 2rem 0;
+          text-align: center;
+          color: $site-theme;
+      }
+
+      img {
+          width: 100%;
+          padding: 1rem;
+      }
+  }
