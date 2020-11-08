@@ -243,6 +243,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5vh;
+  text-align: center;
 }
 
 .steps h3 {
