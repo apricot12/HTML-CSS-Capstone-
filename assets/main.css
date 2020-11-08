@@ -455,10 +455,6 @@ footer a {
     border: none;
     margin-bottom: 1rem;
     border-radius: 0.3rem;
-    width: 120%;
-  }
-  .advanced-filter .filter-items select {
-    width: 120%;
   }
 }
 
@@ -477,6 +473,7 @@ footer a {
   gap: 1rem;
   text-align: center;
   margin: 0.8rem;
+  padding-bottom: 2rem;
 }
 
 .results .results-container a {
@@ -490,6 +487,14 @@ footer a {
 .results .results-container .result-item {
   background: #d95f4b;
   padding: 5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .results .results-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 3rem;
+  }
 }
 
 .main-details {

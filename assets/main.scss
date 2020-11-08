@@ -365,11 +365,6 @@ $site-theme: #D35649;
                 border: none;
                 margin-bottom: 1rem;
                 border-radius: 0.3rem;
-                width: 120%;
-            }
-
-            select {
-                width: 120%;
             }
         }
     }
@@ -389,6 +384,7 @@ $site-theme: #D35649;
           gap: 1rem;
           text-align: center;
           margin: 0.8rem;
+          padding-bottom: 2rem;
 
           a {
               color: white;
@@ -401,6 +397,11 @@ $site-theme: #D35649;
           .result-item {
               background: #d95f4b;
               padding: 5rem 0;
+          }
+
+          @media (min-width: 1024px) {
+              grid-template-columns: repeat(3, 1fr);
+              padding-bottom: 3rem;
           }
       }
 
