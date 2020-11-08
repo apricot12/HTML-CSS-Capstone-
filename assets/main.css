@@ -413,6 +413,13 @@ footer a {
   letter-spacing: 0.5rem;
 }
 
+.main-details .details-text {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.90rem;
+  color: #4c4851;
+}
+
 .details {
   margin-top: 3rem;
   padding: 0.5rem;
@@ -431,7 +438,9 @@ footer a {
 }
 
 .details .detail-items .detail-item {
-  padding: 1rem 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
   border: 1px solid #bebdbd;
   border-radius: 0.3rem;
 }
@@ -442,9 +451,11 @@ footer a {
 }
 
 .details button {
+  font-size: 0.7rem;
+  display: block;
   color: white;
   border: none;
-  padding: 0.5rem;
+  padding: 0.4rem;
   background: #519bd7;
   float: right;
 }
@@ -461,10 +472,19 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.details .contact .contact-item {
+  font-size: 0.7rem;
+  margin: 0.2rem;
 }
 
 .map h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 3rem 2rem 0;
   text-align: center;
   color: #D35649;
@@ -472,6 +492,6 @@ footer a {
 
 .map img {
   width: 100%;
-  padding: 1rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
