@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# RED - Real Estate Directory
 
 > This is a directory of real-estate properties that was built using HTML and SASS with a responsive design at 3 breakpoints for mobile, tablet and desktop.
 
