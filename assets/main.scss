@@ -334,3 +334,21 @@ $site-theme: #D35649;
 
   }
 
+  .main-details {
+      padding: 0 2rem 3rem;   
+  }
+
+  .details {
+      margin-top: 7rem;
+      font-weight: 600;
+      padding: 0.5rem;
+      box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
+
+      .detail-items {
+        margin: 1rem 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+  }
+

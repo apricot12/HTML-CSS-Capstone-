@@ -398,4 +398,16 @@ footer a {
   background: #d95f4b;
   padding: 5rem 0;
 }
+
+.main-details {
+  padding: 0 2rem 3rem;
+}
+
+.details {
+  margin-top: 7rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  -webkit-box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
+          box-shadow: -0.3rem -0.1rem 1rem 0.1rem #bebdbd;
+}
 /*# sourceMappingURL=main.css.map */
