@@ -49,6 +49,12 @@ a:hover {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .navbar .nav-links span {
+    display: inline;
+  }
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +149,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -150,6 +160,10 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5vh;
+}
+
+.steps h3 {
+  color: #D35649;
 }
 
 .steps .wrapper {
@@ -170,16 +184,23 @@ a:hover {
   text-align: center;
 }
 
-.steps .wrapper h3 {
-  color: #D35649;
-}
-
 .steps .wrapper .icon {
   font-size: 2.5rem;
 }
 
 .steps .wrapper article {
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .steps .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 7rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .banners .banner {

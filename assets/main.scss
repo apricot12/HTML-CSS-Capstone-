@@ -37,6 +37,14 @@ $site-theme: #D35649;
               display: none;
           }
       }
+
+      @media (min-width: 1024px) {
+          .nav-links {
+              span {
+                  display: inline;
+              }
+          }
+      }
   }
 
   .search {
@@ -118,9 +126,14 @@ $site-theme: #D35649;
 
   .steps {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-top: 5vh;
+
+      h3 {
+        color: $site-theme;
+    }
       .wrapper {
           display: flex;
           flex-direction: column;
@@ -128,9 +141,6 @@ $site-theme: #D35649;
           align-items: center;
           width: 75%;
           text-align: center;
-          h3 {
-              color: $site-theme;
-          }
 
           .icon {
               font-size: 2.5rem;
@@ -138,6 +148,13 @@ $site-theme: #D35649;
 
           article {
               text-align: center;
+          }
+
+          @media (min-width: 1024px) {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 4rem 7rem;
+              margin-bottom: 1rem;
           }
       }
   }
