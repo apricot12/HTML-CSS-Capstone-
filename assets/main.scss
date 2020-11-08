@@ -244,3 +244,93 @@ $site-theme: #D35649;
   }
 
 
+  .advanced-filter {
+    text-align: center;
+    background: rgba(190, 189, 189, 0.5);
+    margin: 3rem 0;
+    padding: 2rem;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #99a4a6;;
+        margin-bottom: 2rem;
+    }
+
+    .filter-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        h2 {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            border: none;
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+        }
+
+        select {
+            border: none;
+            width: 100%;
+            background: #FFF;
+            padding-top: 0.3rem;
+            border-radius: 0.3rem;
+            margin-bottom: 4rem;
+        }
+
+        .filter-buttons {
+            button {
+                border: none;
+                color: white;
+                padding: 0.35rem;
+                border-radius: 0.4rem;
+            }
+
+            .filter-button-1 {
+                background-color: #457eb4;
+            }
+
+            .filter-button-2 {
+                background-color: #e5ab5b;
+            }
+        }
+    }
+  }
+
+  .results {
+      h2 {
+         text-align: center;
+         font-size: 1.3rem;
+         font-weight: lighter;
+         margin-bottom: 3rem; 
+      }
+
+      .results-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          text-align: center;
+          margin: 0.8rem;
+
+          a {
+              color: white;
+
+              span {
+                  font-weight: bold;
+              }
+          }
+
+          .result-item {
+              background: #d95f4b;
+              padding: 5rem 0;
+          }
+      }
+
+  }
+

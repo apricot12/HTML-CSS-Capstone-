@@ -303,4 +303,99 @@ footer a {
 .bottom-footer p {
   margin-bottom: 0px;
 }
+
+.advanced-filter {
+  text-align: center;
+  background: rgba(190, 189, 189, 0.5);
+  margin: 3rem 0;
+  padding: 2rem;
+}
+
+.advanced-filter h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #99a4a6;
+  margin-bottom: 2rem;
+}
+
+.advanced-filter .filter-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+}
+
+.advanced-filter .filter-items h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.advanced-filter .filter-items input {
+  display: block;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+.advanced-filter .filter-items select {
+  border: none;
+  width: 100%;
+  background: #FFF;
+  padding-top: 0.3rem;
+  border-radius: 0.3rem;
+  margin-bottom: 4rem;
+}
+
+.advanced-filter .filter-items .filter-buttons button {
+  border: none;
+  color: white;
+  padding: 0.35rem;
+  border-radius: 0.4rem;
+}
+
+.advanced-filter .filter-items .filter-buttons .filter-button-1 {
+  background-color: #457eb4;
+}
+
+.advanced-filter .filter-items .filter-buttons .filter-button-2 {
+  background-color: #e5ab5b;
+}
+
+.results h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin-bottom: 3rem;
+}
+
+.results .results-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.results .results-container a {
+  color: white;
+}
+
+.results .results-container a span {
+  font-weight: bold;
+}
+
+.results .results-container .result-item {
+  background: #d95f4b;
+  padding: 5rem 0;
+}
 /*# sourceMappingURL=main.css.map */
