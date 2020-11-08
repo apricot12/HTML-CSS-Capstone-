@@ -152,7 +152,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/assets/imgs/real-estate.jpg");
+  background-image: url("../assets/imgs/real-estate.jpg");
   background-position: center;
   height: 90vh;
   background-size: cover;
