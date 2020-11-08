@@ -8,6 +8,11 @@ $site-theme: #D35649;
     box-sizing: border-box;
   }
 
+  a:hover {
+      text-decoration: none;
+      background: none;
+  }
+
   .navbar {
       display: flex;
       flex-direction: column;
@@ -61,7 +66,6 @@ $site-theme: #D35649;
         .search-form {
             display: flex;
             flex-direction: column;
-            width: 100%;
   
             .search-text {
                 margin-bottom: 10px;
@@ -69,7 +73,10 @@ $site-theme: #D35649;
             }
 
             .search-btn {
+                display: flex;
+                justify-content: center;
                 color: white;
+                align-items: center;
                 background-color:  #D35649;
                 padding: 5px;
                 border: none;
@@ -87,6 +94,25 @@ $site-theme: #D35649;
             padding: 0.5rem;
         }
 
+      }
+
+      @media (min-width: 768px) {
+          .search-box {
+              width: 48%;
+
+              .search-form {
+                  flex-direction: row;
+
+                  .search-text {
+                      margin-bottom: 0px;
+                      width: 100%;
+                  }
+
+                  .search-btn {
+                      padding: 5px;
+                  }
+              }
+          }
       }
   }
 
@@ -135,8 +161,18 @@ $site-theme: #D35649;
         }
 
         h4 {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            text-align: start;
+
+            img {
+                width: 12rem;
+                height: 12rem;
+                margin-bottom: 0px;
+            }
         }
     }
 
@@ -161,8 +197,12 @@ $site-theme: #D35649;
 
   footer {
       background-color: black;
+      padding-top: 2rem;
+      vertical-align: middle;
 
       a {
+          font-size: 0.65rem;
+          font-weight: bold;
           color: white;
           padding: 1rem 1rem;
       }
@@ -172,21 +212,19 @@ $site-theme: #D35649;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: center;
       text-align: center;
       border: 1px #181818;
       border-style: solid none;
-      font-size: 0.8rem;
-      font-weight: 300;
 
       .logo {
-          margin-top: 2.5rem;
-          margin-bottom: 2.5rem;
+          margin: 1rem;
           .top-footer-logo {
               border-radius: 50%;
               background-color: black;
-              font-size: 2rem;
+              font-size: 1.5rem;
               border: 1px solid #181818;
-              padding: 2.5rem;
+              padding: 2rem;
           }
       }
   }
@@ -206,8 +244,10 @@ $site-theme: #D35649;
       }
       
       h3 {
+          font-size: 1rem;
           color: white;
           font-weight: bold;
+          margin-top: 0.5rem;
       }
 
       p {
@@ -217,7 +257,7 @@ $site-theme: #D35649;
       }
 
       .input-form {
-          padding: 1rem 0 1.7rem;
+          padding: 0.3rem 0 1.7rem;
 
           button {
               border-style: none;
@@ -419,5 +459,17 @@ $site-theme: #D35649;
       img {
           width: 100%;
           margin-top: 1rem;
+      }
+  }
+
+  @media (min-width: 768px) {
+      .navbar {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+
+      .top-footer {
+          flex-direction: row;
+          justify-content: space-around;
       }
   }

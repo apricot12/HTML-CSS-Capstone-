@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+a:hover {
+  text-decoration: none;
+  background: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +91,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .search .search-box .search-form .search-text {
@@ -95,7 +99,16 @@
 }
 
 .search .search-box .search-form .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #D35649;
   padding: 5px;
   border: none;
@@ -105,6 +118,25 @@
   background-color: rgba(190, 189, 189, 0.8);
   border: none;
   padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .search .search-box {
+    width: 48%;
+  }
+  .search .search-box .search-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .search .search-box .search-form .search-text {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .search .search-box .search-form .search-btn {
+    padding: 5px;
+  }
 }
 
 .steps {
@@ -177,8 +209,22 @@
 }
 
 .banners .banner h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .banners .banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: start;
+  }
+  .banners .banner img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 0px;
+  }
 }
 
 .banners .banner:nth-child(1) {
@@ -201,9 +247,13 @@
 
 footer {
   background-color: black;
+  padding-top: 2rem;
+  vertical-align: middle;
 }
 
 footer a {
+  font-size: 0.65rem;
+  font-weight: bold;
   color: white;
   padding: 1rem 1rem;
 }
@@ -218,24 +268,24 @@ footer a {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   border: 1px #181818;
   border-style: solid none;
-  font-size: 0.8rem;
-  font-weight: 300;
 }
 
 .top-footer .logo {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin: 1rem;
 }
 
 .top-footer .logo .top-footer-logo {
   border-radius: 50%;
   background-color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 1px solid #181818;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .middle-footer {
@@ -263,8 +313,10 @@ footer a {
 }
 
 .middle-footer h3 {
+  font-size: 1rem;
   color: white;
   font-weight: bold;
+  margin-top: 0.5rem;
 }
 
 .middle-footer p {
@@ -274,7 +326,7 @@ footer a {
 }
 
 .middle-footer .input-form {
-  padding: 1rem 0 1.7rem;
+  padding: 0.3rem 0 1.7rem;
 }
 
 .middle-footer .input-form button {
@@ -493,5 +545,25 @@ footer a {
 .map img {
   width: 100%;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=main.css.map */
