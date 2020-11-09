@@ -527,6 +527,13 @@ a:hover {
   padding: 5rem 0;
 }
 
+@media (min-width: 768px) {
+  .results .results-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 1024px) {
   .results .results-container {
     -ms-grid-columns: (1fr)[3];

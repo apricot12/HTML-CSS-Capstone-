@@ -414,6 +414,10 @@ a:hover {
       padding: 5rem 0;
     }
 
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
       padding-bottom: 3rem;
