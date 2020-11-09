@@ -352,6 +352,17 @@ a:hover {
     font-size: 0.7rem;
     padding: 0.3rem;
   }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .middle-footer-item {
+      width: 50%;
+    }
+  }
 }
 
 .bottom-footer {
